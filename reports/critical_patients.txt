@@ -1,0 +1,3 @@
+101,Rahul,Cardiology,Dr.Smith,Critical,75000
+104,Meena,Cardiology,Dr.Smith,Critical,82000
+108,Divya,General,Dr.Anna,Critical,68000

@@ -73,11 +73,11 @@ category_books() {
 	echo "Enter Category:"
     	read category
 
-	result=$(grep -i,"$category","$FILE")
+	result=$(grep -i ",$category," "$FILE")
 	if [[ -n "$result" ]]; then
 		echo "Books in category: $category"
 		echo "$result"
-	else:
+	else
 		echo "Nhi hai book"
 	fi
 }

@@ -1,0 +1,9 @@
+ID,PatientName,Department,Doctor,Status,Bill
+101,Rahul,Cardiology,Dr.Smith,Critical,75000
+102,Priya,Neurology,Dr.John,Stable,45000
+103,Arun,Orthopedics,Dr.Raj,Pending,25000
+104,Meena,Cardiology,Dr.Smith,Critical,82000
+105,Karthik,General,Dr.Anna,Stable,18000
+106,Sneha,Neurology,Dr.John,Pending,39000
+107,Vijay,Orthopedics,Dr.Raj,Stable,42000
+108,Divya,General,Dr.Anna,Critical,68000

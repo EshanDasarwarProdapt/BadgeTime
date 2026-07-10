@@ -1,0 +1,24 @@
+Employee Payroll Report
+=======================
+
+Employee ID : 101
+Name        : John
+Salary      : 45000 
+Tax         : 4500
+Bonus       : 2000
+Net Salary  : 42500
+-----------------------------------
+Employee ID : 102
+Name        : David
+Salary      : 65000 
+Tax         : 9750
+Bonus       : 5000
+Net Salary  : 60250
+-----------------------------------
+Employee ID : 103
+Name        : Sara
+Salary      : 30000 
+Tax         : 1500
+Bonus       : 2000
+Net Salary  : 30500
+-----------------------------------

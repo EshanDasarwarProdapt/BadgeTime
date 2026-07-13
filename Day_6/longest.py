@@ -1,6 +1,9 @@
 def longest_word(text):
     words = text.split()
-    x = max(words, key=len)
+    x = ""
+    for word in words:
+        if len(word) > len(x):
+            x = word
     return x
 
 x = input("Enter a sentence: ")

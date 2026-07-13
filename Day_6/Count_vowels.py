@@ -1,12 +1,13 @@
 def count_vowels(string):
-    vowels = "aeiouAEIOU"
+    # vowels = "aeiou"
+    vowels = {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0}
+
     
-    d = {}
     for char in string.lower():
         if char in vowels:
             
-            d[char] = d.get(char, 0) + 1
-    return d
+            vowels[char] += 1
+    return vowels
 
 sentence = input("Enter a sentence: ")
 

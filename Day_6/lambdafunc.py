@@ -7,3 +7,6 @@ print("Even numbers:", even_numbers)
 
 squared_even_numbers = list(map(lambda x: x ** 2, even_numbers))
 print("Squared even numbers:", squared_even_numbers)
+
+#Intellisense feature is the greatest feature ever in Python. It helps to write code faster and with fewer errors.
+

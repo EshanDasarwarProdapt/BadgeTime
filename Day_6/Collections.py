@@ -40,3 +40,4 @@ combined = ChainMap(student, course)
 print(combined)
 print(combined["name"])  # Output: Ravi
 print(combined["course"])  # Output: Python
+

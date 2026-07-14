@@ -22,12 +22,13 @@
 
 
 
-from functools import cmp_to_key
+# from functools import cmp_to_key
 
-def compare(a,b):
-    return b-a
+# def compare(a,b):
+#     return b-a
 
-nums = [3,1,4,2]
+# nums = [3,1,4,2]
 
-sorted_nums = sorted(nums, key=cmp_to_key(compare))
-print(sorted_nums)  # Output: [4, 3, 2, 1]
+# sorted_nums = sorted(nums, key=cmp_to_key(compare))
+# print(sorted_nums)  # Output: [4, 3, 2, 1]
+

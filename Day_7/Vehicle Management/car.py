@@ -21,11 +21,4 @@ class Car:
         else:
             print(f"Owner {self.__owner} already set. Use change_owner method to change the owner.")
 
-        
 
-
-# l = [a, b]
-
-# for car in l:
-#     car.start_engine()
-#     car.show_info()

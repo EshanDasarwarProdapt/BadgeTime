@@ -5,7 +5,6 @@ from polymorphism import overloading
 
 overloading()
 
-#hey intelli
 
 a = Car("Toyota", "Camry", 2020, "Mayur")  # Passing owner name as an argument
 

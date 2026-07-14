@@ -17,14 +17,16 @@ def main():
 
         vehicles = [car1,car2]
 
-        print(car1.show_info(), car1.get_owner())  # Output: Alice
-        print(car2.show_info(), car2.get_owner())  # Output: Bob
+        # print(car1.show_info(), car1.get_owner())  # Output: Alice
+        # print(car2.show_info(), car2.get_owner())  # Output: Bob
 
-        print("\nOverloading demo")
-        overloading()
+        # print("\nOverloading demo")
+        # overloading()
 
-        print("\nExporting vehicle data to CSV")
-        export_vehicle_data("vehicle_data.csv", vehicles)
+        car1.start_engine
+
+        # print("\nExporting vehicle data to CSV")
+        # export_vehicle_data("vehicle_data.csv", vehicles)
     except VehicleError as e:
         print(f"An error occurred: {e}")
     

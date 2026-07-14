@@ -1,4 +1,5 @@
 from exception import OwnerAlreadyExistsError
+from utils import log_action
 class Car:
 
     def __init__(self, brand, model, year, owner = None):
@@ -7,9 +8,11 @@ class Car:
         self.year = year
         self.__owner = owner  # Private attribute
 
+    @log_action
     def start_engine(self):
         print(f"The {self.brand} {self.model} engine has started.")
 
+    # @log_action
     def show_info(self):
         print(f"Car Info: {self.year} {self.brand} {self.model}")
         print(f"Owner: {self.__owner}")

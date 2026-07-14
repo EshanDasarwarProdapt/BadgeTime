@@ -43,8 +43,17 @@ class Library:
         self.members.append(member)
 
     def borrow_book(self, member_id, isbn):
-        member = next((m for m in self.members if m['member_id'] == member_id), None)
-        book = next((b for b in self.books if b['isbn'] == isbn), None)
+        member = None
+        for m in self.members:
+            if m['member_id'] == member_id:
+                member = m
+                break
+
+        book = None
+        for b in self.books:
+            if b['isbn'] == isbn:
+                book = b
+                break
 
         if not member:
             print("Member not found.")
@@ -64,8 +73,17 @@ class Library:
         print(f"{member['name']} has borrowed '{book['title']}'.")
 
     def return_book(self, member_id, isbn):
-        member = next((m for m in self.members if m['member_id'] == member_id), None)
-        book = next((b for b in self.books if b['isbn'] == isbn), None)
+        member = None
+        for m in self.members:
+            if m['member_id'] == member_id:
+                member = m
+                break
+
+        book = None
+        for b in self.books:
+            if b['isbn'] == isbn:
+                book = b
+                break
 
         if not member:
             print("Member not found.")

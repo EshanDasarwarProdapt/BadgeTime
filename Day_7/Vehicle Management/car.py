@@ -1,6 +1,7 @@
+from exception import OwnerAlreadyExistsError
 class Car:
 
-    def __init__(self, brand, model, year, owner):
+    def __init__(self, brand, model, year, owner = None):
         self.brand = brand
         self.model = model
         self.year = year
@@ -19,6 +20,7 @@ class Car:
         if self.__owner == None:
             self.__owner = new_owner  # Public method to modify the private attribute
         else:
-            print(f"Owner {self.__owner} already set. Use change_owner method to change the owner.")
+            raise OwnerAlreadyExistsError(new_owner)
+            # print(f"Owner {self.__owner} already set. Use change_owner method to change the owner.")
 
 

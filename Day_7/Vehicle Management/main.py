@@ -1,11 +1,21 @@
 from car import Car
+from ev import EV
+from polymorphism import Overloadingdemo
+from polymorphism import overloading
 
+overloading()
 
-
+#hey intelli
 
 a = Car("Toyota", "Camry", 2020, "Mayur")  # Passing owner name as an argument
 
 b = Car("Honda", "Civic", 2022, "Jane Smith")  # Passing owner name as an argument
+
+ev1 = EV("Tesla", "Model3", 2021, 75)
+
+# ev1.show_info()
+# a.start_engine()
+# ev1.charge_battery()
 
 
 # print(a.brand)  # Output: Toyota

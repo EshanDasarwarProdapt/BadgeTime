@@ -10,12 +10,13 @@ def read_file(filename):
         data = file.read()
         print(data)
         file.close()
-        return dataDay_7/students.txt
+        return data
     except FileNotFoundError:
         print("File not found.")
         return None
     except IOError:
         print("An error occurred while reading the file.")
+        return None
     finally:
         if file:
             file.close()

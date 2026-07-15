@@ -1,4 +1,4 @@
-from person import Person
+from models.person import Person
 
 class Patient(Person):
     def __init__(self, id, name, age, ailment):
@@ -9,7 +9,5 @@ class Patient(Person):
         details = super().display_info()
         details.update({"ailment": self.ailment})
         return details
-    
 
-a = Patient(1, "John Doe", 30, "Flu")
-print(a.display_info())
+    # Removed module-level demo code so importing Patient does not print output.

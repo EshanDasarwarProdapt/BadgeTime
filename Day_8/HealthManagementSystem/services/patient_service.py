@@ -3,10 +3,14 @@ class PatientService:
         self.datastore = datastore
 
     def add_patient(self,patient):
-        self.datastore["patients"][patient._id] = patient
+        # Use the public id attribute from Person/Patient.
+        self.datastore["patients"][patient.id] = patient
 
     def get_patient(self,patient_id):
-        return self.datastore["patients"].get(patient_id).display_info()
+        patient = self.datastore["patients"].get(patient_id)
+        if patient:
+            return patient.display_info()
+        return None
     
     def update_patient(self,patient_id, ailment):
         if patient_id in self.datastore["patients"]:

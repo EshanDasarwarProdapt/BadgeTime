@@ -14,7 +14,7 @@ def chatbots(inputs: Sequence[InputData]) -> None:
 conversation = (
     "hi",
     "Show me nearby restaurant",
-    b'\x89PNG',
+    b'\xff\xd8\xff',
     "Explain this image"
 
 )

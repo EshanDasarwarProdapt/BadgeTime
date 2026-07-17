@@ -1,7 +1,7 @@
 {
   "bookings": [
     {
-      "id": 1,
+      "id": "1",
       "customer": "Rahul",
       "sport": "Football",
       "hours": 2,
@@ -9,7 +9,7 @@
       "status": "Confirmed"
     },
     {
-      "id": 2,
+      "id": "2",
       "customer": "Priya",
       "sport": "Cricket",
       "hours": 3,
@@ -17,12 +17,33 @@
       "status": "Pending"
     },
     {
-      "id": 3,
+      "id": "3",
       "customer": "Arun",
       "sport": "Football",
       "hours": 1,
       "amount": 1200,
       "status": "Confirmed"
+    },
+    {
+      "email": "hello@gmail.com",
+      "id": "hhwrcK-P358"
+    },
+    {
+      "id": "GZ6f3hqgCBM",
+      "customer": "Mayur",
+      "sport": "Badminton",
+      "hours": 2,
+      "amount": 1800,
+      "status": "Confirmed"
+    },
+    {
+      "id": "-DUE2JsT0IU",
+      "customer": "Mayur",
+      "sport": "Badminton",
+      "hours": 2,
+      "amount": 1800,
+      "status": "Confirmed"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

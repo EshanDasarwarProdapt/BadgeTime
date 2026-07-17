@@ -47,6 +47,14 @@
       "hours": 2,
       "amount": 1800,
       "status": "Confirmed"
+    },
+    {
+      "id": 556,
+      "customer": "Rishi",
+      "sport": "Badminton",
+      "hours": 2,
+      "amount": 1800,
+      "status": "Confirmed"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

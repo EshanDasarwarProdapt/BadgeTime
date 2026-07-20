@@ -9,3 +9,6 @@ pip install -r requirements.txt
 
 To check list
 pip list
+
+To deactivate
+deactivate

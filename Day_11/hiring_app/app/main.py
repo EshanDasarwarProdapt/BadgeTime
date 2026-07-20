@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 
+from app.core.database import Base, engine
+
 app = FastAPI()
 
 # @app.get("/")
@@ -58,21 +60,25 @@ app = FastAPI()
 #     }
 
 
-# pyrefly: ignore [missing-import]
 from app.models.job import Job
 from app.schemas.job_schema import JobCreate
+
+
+@app.on_event("startup")
+def on_startup():
+    Base.metadata.create_all(bind=engine)
 
 @app.get('/')
 def home():
     job = Job(
         title = "Python Dev",
-        des = "Develop fastAPI appl",
+        description = "Develop fastAPI appl",
         salary = 750000,
         company = "ABC Technologies"
     )
     job_schema = JobCreate(
         title = job.title,
-        description=job.des,
+        description=job.description,
         salary=job.salary,
         company=job.company
     )
@@ -86,7 +92,7 @@ def create_jobs(job: JobCreate):
     #Convert schema to model
     job_model = Job(
         title = job.title,
-        des = job.description,
+        description = job.description,
         salary = job.salary,
         company = job.company
     )

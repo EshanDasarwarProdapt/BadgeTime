@@ -11,4 +11,7 @@ To check list
 pip list
 
 To deactivate
-deactivate
+deactivate 
+
+To start the server of FASTAPI
+uvicorn app.main:app --reload

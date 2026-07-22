@@ -1,0 +1,9 @@
+2026-07-22 15:53:32,443 - INFO - Telecom Billing CLI Started.
+2026-07-22 15:53:32,455 - INFO - Loaded 3 subscribers.
+2026-07-22 15:53:32,455 - ERROR - Skipping malformed row: Malformed CDR row: {'msisdn': '9800011122', 'call_type': 'domestic', 'duration_sec': 'notanumber'}
+2026-07-22 15:53:32,455 - ERROR - Skipping malformed row: Malformed CDR row: {'msisdn': '5487487486', 'call_type': 'domestic', 'duration_sec': 'hello'}
+2026-07-22 15:53:32,455 - INFO - Loaded 6 valid CDRs.
+2026-07-22 15:53:32,455 - WARNING - Suspicious call detected: 9876543210
+2026-07-22 15:53:32,455 - WARNING - Unknown subscriber: 9999999999
+2026-07-22 15:53:32,456 - INFO - Report written to reports.json
+2026-07-22 15:53:32,457 - INFO - Telecom Billing CLI Completed Successfully.
